@@ -1,13 +1,14 @@
 import sys
+from typing import Dict, List
 
 class NonExistenceError(Exception):
-    def __init__(self, msg) :
+    def __init__(self, msg : str) :
         print(msg)
     pass
 
 
 class Card :
-    def __init__(self, number, shape, JQK = None) :
+    def __init__(self, number : int, shape : str, JQK : str = None) :
         self.number = number
         self.shape = shape
 
@@ -29,7 +30,6 @@ class Card :
         else :
             raise NonExistenceError('card number < 1 or > 10')
         
-
     def cardnumber(self) :
         return_list = []
         if self.number == 1 :
@@ -43,16 +43,13 @@ class Card :
         return self.cardshape
 
 
-
 class Cardpack :
-
     heart = {}
     diamond = {}
     clova = {}
     spade = {}
     
-    def __init__(self, number_of_cardpack = 1) :
-
+    def __init__(self, number_of_cardpack : int = 1) :
         def cardinitHelper(number_of_cardpack) :
             card_dic = {1 : number_of_cardpack,
                         2 : number_of_cardpack,
@@ -67,8 +64,9 @@ class Cardpack :
                         'Q' : number_of_cardpack,
                         'K' : number_of_cardpack}
             return card_dic
-
         self.heart = cardinitHelper(number_of_cardpack)
         self.diamond = cardinitHelper(number_of_cardpack)
         self.clova = cardinitHelper(number_of_cardpack)
         self.spade = cardinitHelper(number_of_cardpack)
+
+
