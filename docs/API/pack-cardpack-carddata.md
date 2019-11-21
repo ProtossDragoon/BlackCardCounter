@@ -12,7 +12,7 @@ parameters :
 - [optional string JQK]
 return type : Card Object 
 <br>
-example
+
 ```
 card = Card(int : cardnumber, string : cardshape, [string : JQK = JorQorK])
 ```
@@ -24,7 +24,7 @@ card = Card(int : cardnumber, string : cardshape, [string : JQK = JorQorK])
 parameters : None
 return type : list
 <br>
-example
+
 ```
 card_num = card.cardnumber()
 ```
@@ -33,7 +33,7 @@ card_num = card.cardnumber()
 parameters : None
 return type : string
 <br>
-example
+
 ```
 card_num = card.cardnumber()
 ```
@@ -44,7 +44,7 @@ card_num = card.cardnumber()
 
 카드 팩 만들기
 <br>
-example
+
 ```
 cardpack = Cardpack(int : number_of_cardpack)
 ```
