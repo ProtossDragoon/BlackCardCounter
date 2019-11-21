@@ -29,13 +29,13 @@ return type : list
 card_num = card.cardnumber()
 ```
 
-### 카드의 문자 반환하기
+### 카드의 모양 반환하기
 parameters : None
 return type : string
 <br>
 
 ```
-card_num = card.cardnumber()
+card_num = card.cardshape()
 ```
 
 
